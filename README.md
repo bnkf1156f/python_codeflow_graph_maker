@@ -348,4 +348,4 @@ Add new analysis functions to `analyzer.py` and integrate them into the main ana
 
 ---
 
-**Made with ❤️ for the Python community** 
+**Made with ❤️ for the Python community. If there is issues, please don't hesitate to open issue!** 
