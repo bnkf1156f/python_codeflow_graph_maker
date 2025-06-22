@@ -337,7 +337,6 @@ node_colors = {
 
 ### Extending Analysis
 Add new analysis functions to `analyzer.py` and integrate them into the main analysis pipeline.
-```
 
 ## 🧑‍💻 Tech Stack
 
