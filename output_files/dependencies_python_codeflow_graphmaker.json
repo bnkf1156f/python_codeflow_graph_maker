@@ -1,0 +1,311 @@
+{
+  "files": {
+    "analyzer.py": {
+      "imports": [
+        "ast",
+        "os",
+        "typing"
+      ],
+      "io_count": 1,
+      "function_usage": {
+        "ast": [
+          "Import",
+          "Name",
+          "ImportFrom",
+          "walk",
+          "AST",
+          "Attribute",
+          "parse",
+          "Call"
+        ],
+        "os": [
+          "path"
+        ],
+        "typing": [
+          "List",
+          "Tuple",
+          "Set",
+          "Any",
+          "Dict"
+        ]
+      }
+    },
+    "dependency_store.py": {
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "os"
+      ],
+      "io_count": 4,
+      "function_usage": {
+        "json": [
+          "load",
+          "dump"
+        ],
+        "pathlib": [
+          "Path"
+        ],
+        "typing": [
+          "Set",
+          "Dict",
+          "List",
+          "Any"
+        ],
+        "os": []
+      }
+    },
+    "gui.py": {
+      "imports": [
+        "streamlit",
+        "os",
+        "json",
+        "pathlib",
+        "worker",
+        "matplotlib.pyplot",
+        "io",
+        "base64",
+        "tkinter"
+      ],
+      "io_count": 11,
+      "function_usage": {
+        "streamlit": [
+          "session_state",
+          "button",
+          "rerun",
+          "spinner",
+          "success",
+          "error",
+          "markdown",
+          "text_input",
+          "pyplot",
+          "multiselect",
+          "metric",
+          "exception",
+          "write",
+          "set_page_config",
+          "warning",
+          "tabs",
+          "columns",
+          "selectbox",
+          "info",
+          "text_area",
+          "download_button"
+        ],
+        "os": [
+          "path",
+          "walk"
+        ],
+        "json": [
+          "dumps"
+        ],
+        "pathlib": [
+          "Path"
+        ],
+        "worker": [
+          "dependency_store_maker",
+          "graph_maker"
+        ],
+        "matplotlib.pyplot": [],
+        "io": [
+          "BytesIO"
+        ],
+        "base64": [],
+        "tkinter": [
+          "Tk",
+          "filedialog"
+        ]
+      }
+    },
+    "non_interactive_main.py": {
+      "imports": [
+        "os",
+        "worker"
+      ],
+      "io_count": 0,
+      "function_usage": {
+        "os": [
+          "path"
+        ],
+        "worker": [
+          "dependency_store_maker",
+          "graph_maker"
+        ]
+      }
+    },
+    "worker.py": {
+      "imports": [
+        "os",
+        "numpy",
+        "networkx",
+        "matplotlib.pyplot",
+        "sys",
+        "analyzer",
+        "dependency_store"
+      ],
+      "io_count": 2,
+      "function_usage": {
+        "os": [
+          "path",
+          "walk"
+        ],
+        "numpy": [],
+        "networkx": [
+          "DiGraph",
+          "draw_networkx_labels",
+          "draw_networkx_nodes",
+          "shell_layout",
+          "draw_networkx_edges",
+          "draw_networkx_edge_labels"
+        ],
+        "matplotlib.pyplot": [
+          "figure",
+          "legend",
+          "tight_layout",
+          "gcf",
+          "axis"
+        ],
+        "sys": [
+          "stdlib_module_names"
+        ],
+        "analyzer": [
+          "analyze_file"
+        ],
+        "dependency_store": [
+          "get_file_io_operations",
+          "get_summary",
+          "get_all_dependencies",
+          "DependencyStore"
+        ]
+      }
+    }
+  },
+  "modules": {
+    "ast": [
+      "analyzer.py"
+    ],
+    "os": [
+      "analyzer.py",
+      "dependency_store.py",
+      "gui.py",
+      "non_interactive_main.py",
+      "worker.py"
+    ],
+    "typing": [
+      "analyzer.py",
+      "dependency_store.py"
+    ],
+    "json": [
+      "dependency_store.py",
+      "gui.py"
+    ],
+    "pathlib": [
+      "dependency_store.py",
+      "gui.py"
+    ],
+    "streamlit": [
+      "gui.py"
+    ],
+    "worker": [
+      "gui.py",
+      "non_interactive_main.py"
+    ],
+    "matplotlib.pyplot": [
+      "gui.py",
+      "worker.py"
+    ],
+    "io": [
+      "gui.py"
+    ],
+    "base64": [
+      "gui.py"
+    ],
+    "tkinter": [
+      "gui.py"
+    ],
+    "numpy": [
+      "worker.py"
+    ],
+    "networkx": [
+      "worker.py"
+    ],
+    "sys": [
+      "worker.py"
+    ],
+    "analyzer": [
+      "worker.py"
+    ],
+    "dependency_store": [
+      "worker.py"
+    ]
+  },
+  "io_operations": {
+    "analyzer.py": [
+      "open() at line 174"
+    ],
+    "dependency_store.py": [
+      "open() at line 71",
+      "json.dump at line 72",
+      "open() at line 79",
+      "json.load at line 80"
+    ],
+    "gui.py": [
+      "io.BytesIO at line 66",
+      "streamlit.download_button at line 602",
+      "json.dumps at line 645",
+      "streamlit.download_button at line 646",
+      "streamlit.download_button at line 699",
+      "json.dumps at line 710",
+      "streamlit.download_button at line 712",
+      "streamlit.download_button at line 576",
+      "open() at line 591",
+      "streamlit.download_button at line 681",
+      "open() at line 696"
+    ],
+    "non_interactive_main.py": [],
+    "worker.py": [
+      "open() at line 122",
+      "open() at line 257"
+    ]
+  },
+  "function_usage": {},
+  "file_info": {
+    "analyzer.py": {
+      "path": "D:\\Projects\\python_codeflow_graphmaker\\analyzer.py",
+      "size": 11543,
+      "lines": 262,
+      "empty": false
+    },
+    "dependency_store.py": {
+      "path": "D:\\Projects\\python_codeflow_graphmaker\\dependency_store.py",
+      "size": 6054,
+      "lines": 137,
+      "empty": false
+    },
+    "gui.py": {
+      "path": "D:\\Projects\\python_codeflow_graphmaker\\gui.py",
+      "size": 31345,
+      "lines": 752,
+      "empty": false
+    },
+    "non_interactive_main.py": {
+      "path": "D:\\Projects\\python_codeflow_graphmaker\\non_interactive_main.py",
+      "size": 1003,
+      "lines": 23,
+      "empty": false
+    },
+    "worker.py": {
+      "path": "D:\\Projects\\python_codeflow_graphmaker\\worker.py",
+      "size": 12417,
+      "lines": 287,
+      "empty": false
+    }
+  },
+  "summary": {
+    "total_files": 5,
+    "total_imports": 25,
+    "total_io_operations": 18,
+    "total_lines": 1461,
+    "empty_files": 0
+  }
+}

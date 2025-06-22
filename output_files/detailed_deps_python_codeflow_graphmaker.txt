@@ -1,0 +1,48 @@
+--- Detailed Dependencies ---
+Main File: gui.py
+Total Dependencies: 16
+
+--- Analysis Summary ---
+Total files analyzed: 5
+Total imports found: 25
+Total I/O operations: 18
+Total lines of code: 1461
+
+--- Dependency Relationships ---
+gui.py depends on streamlit (prebuilt)
+gui.py depends on os (prebuilt)
+gui.py depends on json (prebuilt)
+gui.py depends on pathlib (prebuilt)
+gui.py depends on worker (custom)
+gui.py depends on matplotlib.pyplot (prebuilt)
+gui.py depends on io (prebuilt)
+gui.py depends on base64 (prebuilt)
+gui.py depends on tkinter (prebuilt)
+worker depends on os (prebuilt)
+worker depends on numpy (prebuilt)
+worker depends on networkx (prebuilt)
+worker depends on matplotlib.pyplot (prebuilt)
+worker depends on sys (prebuilt)
+worker depends on analyzer (custom)
+worker depends on dependency_store (custom)
+analyzer depends on ast (prebuilt)
+analyzer depends on os (prebuilt)
+analyzer depends on typing (prebuilt)
+dependency_store depends on json (prebuilt)
+dependency_store depends on pathlib (prebuilt)
+dependency_store depends on typing (prebuilt)
+dependency_store depends on os (prebuilt)
+
+--- I/O Operations in gui.py ---
+io.BytesIO at line 66
+streamlit.download_button at line 602
+json.dumps at line 645
+streamlit.download_button at line 646
+streamlit.download_button at line 699
+json.dumps at line 710
+streamlit.download_button at line 712
+streamlit.download_button at line 576
+open() at line 591
+streamlit.download_button at line 681
+open() at line 696
+---------------------------
