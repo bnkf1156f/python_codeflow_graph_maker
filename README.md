@@ -1,4 +1,4 @@
-# 🔄 Code Flow Graph Maker
+# 🔄 Python Code Flow Graph Maker
 
 A comprehensive Python code analysis and visualization tool that automatically generates dependency graphs for Python codebases. This tool analyzes import dependencies, tracks I/O operations, and creates interactive visualizations to help developers understand code structure and dependencies across pre-built libraries and custom modules.
 
