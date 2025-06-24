@@ -338,7 +338,7 @@ node_colors = {
 ### Extending Analysis
 Add new analysis functions to `analyzer.py` and integrate them into the main analysis pipeline.
 
-## 🧑‍💻 Tech Stack
+## 🧑‍💻 Concepts/DS/Libraries Used
 
 - **Python AST Module**: For static code analysis capabilities
 - **NetworkX**: For graph generation and layout algorithms
